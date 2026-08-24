@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
 
 @theme {
   --color-brand: #4c512d;
@@ -48,12 +48,10 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   background: linear-gradient(to right, rgba(76, 81, 45, 0.9) 0%, rgba(76, 81, 45, 0.7) 100%);
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom selection color */
 ::selection {
   background-color: var(--color-brand);
   color: white;
