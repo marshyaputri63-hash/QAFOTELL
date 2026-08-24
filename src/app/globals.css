@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+@theme {
+  --color-brand: #4c512d;
+  --color-brand-dark: #3a3f22;
+  --color-brand-light: #656c3d;
+  --color-brand-gold: #c9963a;
+  --color-surface: #fcf9f8;
+  --color-surface-alt: #f2f0ec;
+  --color-surface-container: #efecea;
+  --color-surface-variant: #e4e2d3;
+  --color-text-primary: #1f1f1f;
+  --color-text-secondary: #666666;
+  --color-outline: #787869;
+  
+  --font-serif: 'Libre Caslon Text', serif;
+  --font-sans: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.hero-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.offer-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-overlay {
+  background: linear-gradient(to right, rgba(76, 81, 45, 0.9) 0%, rgba(76, 81, 45, 0.7) 100%);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection color */
+::selection {
+  background-color: var(--color-brand);
+  color: white;
+}
