@@ -14,8 +14,8 @@ const facilitiesData = [
   { nameKey: "highSpeedWifi", nameEn: "High-Speed Wi-Fi", descEn: "Stay connected with our complimentary high-speed Wi-Fi available throughout the hotel.", icon: <Wifi className="w-5 h-5" />, image: "/images/indoor.jpeg" },
   { nameKey: "restaurant", nameEn: "Restaurant", descEn: "Enjoy delicious local and international cuisine in our cozy restaurant with a warm ambiance.", icon: <Utensils className="w-5 h-5" />, image: "/images/jardincoffee.jpeg" },
   { nameKey: "meetingRoom", nameEn: "Meeting Room", descEn: "Modern meeting spaces equipped with the latest technology for productive gatherings.", icon: <Users className="w-5 h-5" />, image: "/images/meetingroom.jpeg" },
-  { nameKey: "freeParking", nameEn: "Free Parking", descEn: "Enjoy hassle-free parking with spacious and secure parking areas for our guests.", icon: <Car className="w-5 h-5" />, image: "/images/outdoor.jpeg" },
-  { nameKey: "prayerRoom", nameEn: "Prayer Room", descEn: "A peaceful and comfortable space for your worship needs during your stay.", icon: <Heart className="w-5 h-5" />, image: "/images/indoorv2.jpeg" },
+  { nameKey: "freeParking", nameEn: "Free Parking", descEn: "Enjoy hassle-free parking with spacious and secure parking areas for our guests.", icon: <Car className="w-5 h-5" />, image: "/images/parking.jpeg" },
+  { nameKey: "prayerRoom", nameEn: "Prayer Room", descEn: "A peaceful and comfortable space for your worship needs during your stay.", icon: <Heart className="w-5 h-5" />, image: "/images/musholla.jpeg" },
   { nameKey: "laundryService", nameEn: "Laundry Service", descEn: "Keep your wardrobe fresh with our professional laundry and dry cleaning service.", icon: <Shirt className="w-5 h-5" />, image: "/images/wardrobe.jpeg" },
   { nameKey: "inRoomAmenities", nameEn: "In-Room Amenities", descEn: "Enjoy thoughtful in-room features and amenities for your comfort and convenience.", icon: <Coffee className="w-5 h-5" />, image: "/images/amenities.jpeg" },
   { nameKey: "frontDesk", nameEn: "24/7 Front Desk", descEn: "Our friendly team is available 24/7 to assist you with any inquiries for a seamless stay.", icon: <ConciergeBell className="w-5 h-5" />, image: "/images/resepionist.jpeg" },
@@ -25,7 +25,7 @@ const facilitiesData = [
 const meetingRooms = [
   { name: "Aloe Room", code: "Room A", dimensions: "9.70 m x 5.86 m", theater: "30 - 40 pax", classroom: "24 - 30 pax", uShape: "13 - 18 pax", image: "/images/meetingroom.jpeg" },
   { name: "Terra Room", code: "Room B", dimensions: "10.97 m x 7.70 m", theater: "45 - 50 pax", classroom: "30 - 40 pax", uShape: "13 - 22 pax", image: "/images/meetingroomv2.jpeg" },
-  { name: "Plenty Room", code: "Room C", dimensions: "16.83 m x 9.70 m & 7.70 m", theater: "90 - 100 pax", classroom: "80 - 90 pax", uShape: "40 - 50 pax", image: "/images/koridor.jpeg" },
+  { name: "Plenty Room", code: "Room C", dimensions: "16.83 m x 9.70 m & 7.70 m", theater: "90 - 100 pax", classroom: "80 - 90 pax", uShape: "40 - 50 pax", image: "/images/plentyroom.jpeg" },
 ];
 
 export default function FacilitiesPage() {

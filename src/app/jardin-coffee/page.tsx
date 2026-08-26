@@ -76,7 +76,7 @@ export default function JardinCoffeePage() {
               <img
                 alt="Smashed Cheezy Burger"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src="/images/jardincoffeev2.jpeg"
+                src="/images/smashed cheezy burger.jpeg"
               />
               <div className="absolute top-4 right-4 bg-brand/90 backdrop-blur-sm text-white text-xs font-semibold px-4 py-2 rounded-full flex items-center gap-2">
                 <Coffee className="w-4 h-4" />

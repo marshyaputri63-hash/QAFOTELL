@@ -66,7 +66,7 @@ export default function AboutPage() {
       <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-            <div className="order-2 lg:order-1 relative"><img alt="Thoughtfully Designed Hotel Room" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" src="/images/indoor.jpeg" /></div>
+            <div className="order-2 lg:order-1 relative"><img alt="Thoughtfully Designed Hotel Room" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" src="/images/indoorv3.jpeg" /></div>
             <div className="order-1 lg:order-2">
               <div className="flex items-center gap-2 mb-4"><span className="text-xs font-bold tracking-widest text-brand uppercase">{t(translations.about, "thoughtfullyDesigned")}</span><svg className="text-yellow-500" fill="none" height="16" viewBox="0 0 24 24" width="16"><path d="M12 2L14.4 8.8H21.6L15.8 13.2L18 20L12 15.6L6 20L8.2 13.2L2.4 8.8H9.6L12 2Z" fill="currentColor" /></svg></div>
               <h2 className="serif text-3xl md:text-4xl text-gray-900 mb-6 leading-tight">{t(translations.about, "designHeading")}</h2>

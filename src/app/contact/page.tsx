@@ -24,7 +24,7 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="relative h-[400px] bg-gray-900 overflow-hidden">
-        <img alt="Hotel Exterior at Dusk" className="absolute inset-0 w-full h-full object-cover opacity-60" src="/images/outdoor.jpeg" />
+        <img alt="Hotel Receptionist" className="absolute inset-0 w-full h-full object-cover opacity-60" src="/images/resepionist.jpeg" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 h-full flex flex-col justify-center">
           <h1 className="text-5xl md:text-6xl text-white font-bold mb-4">{t(translations.contact, "heroTitle")}</h1>
@@ -88,8 +88,8 @@ export default function ContactPage() {
         {/* Directions */}
         <section className="bg-surface-container rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-4 flex-1"><div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center text-white shrink-0"><Leaf className="w-5 h-5" /></div><div><h3 className="font-bold text-brand mb-1">{t(translations.contact, "findUs")}</h3><p className="text-gray-600 text-sm">{t(translations.contact, "findUsDesc")}</p></div></div>
-          <button className="px-6 py-2 border border-outline rounded-xl flex items-center gap-2 hover:bg-surface-container-high transition-colors text-sm font-medium whitespace-nowrap">{t(translations.contact, "getDirections")}<ArrowRight className="w-4 h-4" /></button>
-          <div className="flex-1 h-24 rounded-xl overflow-hidden relative"><img alt="Map Area" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBMw2SENxU53lTJ5pOLbDWoPPLGpESLyYJT-gM_UC9N3MWKcmasBZ__yS6G7Juhz6uAp2XO0ZK8UEzMcbvUwPSorrS30_B8mfDRKMZeDzlCqSV0hYbAP-vYcDGbVlOBceFgj03XsprGCipHK7MGiCJA7Hk1nBOn3Z2760qWiCFXxvMUjsUSk7jdXhvL1AJWSLrymq6eTQkM6n8f_gwlEhmBMxgIaiuK-6Pbq7GN-p-risL64KK4PjA" /></div>
+          <a href="https://maps.app.goo.gl/BBJFmzCGDDLBbzyv8" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border border-outline rounded-xl flex items-center gap-2 hover:bg-surface-container-high transition-colors text-sm font-medium whitespace-nowrap">{t(translations.contact, "getDirections")}<ArrowRight className="w-4 h-4" /></a>
+          <div className="flex-1 h-24 rounded-xl overflow-hidden relative"><img alt="Map Area" className="w-full h-full object-cover" src="/images/outdoor.jpeg" /></div>
         </section>
 
         {/* CTA */}
