@@ -24,7 +24,7 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="relative h-[400px] bg-gray-900 overflow-hidden">
-        <img alt="Hotel Exterior at Dusk" className="absolute inset-0 w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcrrYby3dwmjwSgT61nYzfxQ7KozwCg1oERmaOHKXRU2dkEfznf6GkaW2TUcNPAOQmiGvYmkbyC8h-ZJJk287NT9jdkLBuCfrVHgtpfq7PCtnBmaYv3kU6EDYX7O4rqZK5bJFXEer3TiczhF-DJ38VbLuAaQbfh8EmPDfSXkkUZTdPUkLtprxDkJtJkfN_Q8urf6qys55c8JtwYZbI4TPOiFPsvaUN3Wfqc-BX-2lkNNmTUgVEJIQe" />
+        <img alt="Hotel Exterior at Dusk" className="absolute inset-0 w-full h-full object-cover opacity-60" src="/images/outdoor.jpeg" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-4 h-full flex flex-col justify-center">
           <h1 className="text-5xl md:text-6xl text-white font-bold mb-4">{t(translations.contact, "heroTitle")}</h1>

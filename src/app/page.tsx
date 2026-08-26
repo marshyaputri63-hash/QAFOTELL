@@ -16,7 +16,7 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative h-[600px] md:h-[700px] hero-bg flex items-center"
-        style={{ backgroundImage: "url(https://lh3.googleusercontent.com/aida-public/AB6AXuDzrurEGxhD3zPm3MKsOXLKhjihWbPs5eu1j0cwIEw9ARbv6-4XA2gGoTTdBXFeQBW1JYDcDhUcsrqkGhXPQM5XB4hMCbCoLCB5ay9Y4hWAzMK_JEAz1KRlKuI52Oz6WMw6uHFiOMg9ucxa2z8bkwWnS-BvwSONfgQdpDZm3sPEv_MSCr5W6CCF8r-GjhtcZ_SGhA7622tP4x3PljmWIecgtTw6zlIaKCrWSb4JMgf1HcikWIJSrcz4)" }}>
+        style={{ backgroundImage: "url(/images/qafotel_landscape.jpeg)" }}>
         <div className="absolute inset-0 hero-overlay" />
         <div className="container mx-auto px-6 relative z-10 text-white max-w-4xl pt-20">
           <h1 className="text-5xl md:text-7xl font-serif mb-6 leading-tight whitespace-pre-line">{t(translations.home, "heroTitle")}</h1>
@@ -95,7 +95,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12 text-left">
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
             <div className="h-64 overflow-hidden">
-              <img alt="Leaf Room" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpb_LmlxXOQ_-aApvrKo8fR8bIanRpkHuCNsE7zMQFHaIQy1Oclq8JvRUxlbEHz2Ta-d6c28VUya_TOiEx4v8vuvmipfDuqn42HAI7sGn3eA0yH4sUSt1yLtJqmhc64sfkcxGogj10XrfQ9dDFY5tjQoX7tun4fxqnkfY1a6kf7ieZcT89z63SLiMa9QbNngEg4CfBZStIQycWUTXvhoAHRsePuGhEtqSPcpopmpXRtet8p8W-0R3s" />
+              <img alt="Leaf Room" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/leaf room.jpeg" />
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-serif font-bold text-gray-900 mb-3">{t(translations.rooms, "leafRoom")}</h3>
@@ -108,7 +108,7 @@ export default function HomePage() {
           </div>
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group">
             <div className="h-64 overflow-hidden">
-              <img alt="Oasis Room" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0e_n3nKEBgkOpOkh4O1j4QgMRyyl8MhEUtiIY1PfpJ0gS7uDjPQL8AMLWPbw6qrkdFxFgKH57ujcT59aXg9QVtLgyTd0vc3yp5jKkcA0HPnLiPDHPBuJnMvLAsSTXGBQPnQuECapULiq69CeBwj9xNIaCeTIqaNLE6NAujJtQoRvD0Bfk3wmb5eImIwDUg5nm9AR94ratpvPnPMA80Ah2FmVnjcg05WWG4vkg2bh5fT-c66M4K13Z" />
+              <img alt="Oasis Room" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/oase room.jpeg" />
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-serif font-bold text-gray-900 mb-3">{t(translations.rooms, "oaseRoom")}</h3>
@@ -137,7 +137,7 @@ export default function HomePage() {
 
       {/* Special Offer Banner */}
       <section className="py-12 container mx-auto px-6">
-        <div className="relative rounded-2xl overflow-hidden offer-bg flex items-center" style={{ backgroundImage: "url(https://lh3.googleusercontent.com/aida-public/AB6AXuAonrUYD3aAOqH4OBHXfYSwZCDZgZkcz3Ch6E6PeYH3Vtoi71Hxu0h1HUQF_BvlghHMzVAQ76AnsquvhNP4uJf9yS9NAFheKD4Fkz0Auh4mSy5sf2otCu4RnaJrXAbRyxYlLMU5d7qDpEh95fhwPmTbABmG4QUZLgbAgNdcf77J8BgLCSG7kVKIoujSGe7wjJpWm7-A2Q7fZmH4HqM9VG1viGyBFMzVeLBd99rx6ztIsPI1tjiz1w1s)" }}>
+        <div className="relative rounded-2xl overflow-hidden offer-bg flex items-center"        style={{ backgroundImage: "url(/images/outdoor.jpeg)" }}>
           <div className="absolute inset-0 offer-overlay" />
           <div className="relative z-10 p-10 md:p-14 flex flex-col md:flex-row items-center justify-between w-full gap-8">
             <div className="flex items-center gap-8">

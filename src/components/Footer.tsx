@@ -43,7 +43,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-brand transition-colors">{t(translations.nav, "about")}</Link></li>
               <li><Link href="/rooms" className="hover:text-brand transition-colors">{t(translations.nav, "rooms")}</Link></li>
               <li><Link href="/facilities" className="hover:text-brand transition-colors">{t(translations.nav, "facilities")}</Link></li>
-              <li><Link href="#" className="hover:text-brand transition-colors">{t(translations.nav, "gallery")}</Link></li>
+              <li><Link href="/jardin-coffee" className="hover:text-brand transition-colors">{t(translations.nav, "jardinCoffee")}</Link></li>
               <li><Link href="/contact" className="hover:text-brand transition-colors">{t(translations.nav, "contact")}</Link></li>
             </ul>
           </div>

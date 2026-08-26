@@ -13,7 +13,7 @@ const navLinks = [
   { nameKey: "about", href: "/about" },
   { nameKey: "rooms", href: "/rooms" },
   { nameKey: "facilities", href: "/facilities" },
-  { nameKey: "gallery", href: "#" },
+  { nameKey: "jardinCoffee", href: "/jardin-coffee" },
   { nameKey: "contact", href: "/contact" },
 ];
 
@@ -29,9 +29,6 @@ export default function Header() {
           QAF
           <span className="text-brand-gold text-xl relative -top-0.5">O</span>
           TEL
-          <span className="text-[0.6rem] uppercase tracking-widest font-sans ml-1 text-gray-500 absolute -bottom-3 left-1">
-            Boutique
-          </span>
         </div>
       </Link>
 

@@ -1,21 +1,46 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
 import { translations } from "@/lib/i18n";
 import { sendBookingWhatsApp } from "@/lib/whatsapp";
+import RoomGallery from "@/components/RoomGallery";
 import {
   Users, Mail, Bed, Globe, Wifi, Monitor, Briefcase, Car, ArrowRight,
 } from "lucide-react";
 
+const leafRoomImages = [
+  { src: "/images/leaf room.jpeg", alt: "Leaf Room - Full View" },
+  { src: "/images/amenities.jpeg", alt: "Leaf Room - Amenities" },
+  { src: "/images/kursi goyang.jpeg", alt: "Leaf Room - Seating Area" },
+  { src: "/images/wardrobe.jpeg", alt: "Leaf Room - Wardrobe" },
+];
+
+const oaseRoomImages = [
+  { src: "/images/oase room.jpeg", alt: "Oase Room - Full View" },
+  { src: "/images/amenities.jpeg", alt: "Oase Room - Amenities" },
+  { src: "/images/kursi goyang.jpeg", alt: "Oase Room - Seating Area" },
+  { src: "/images/wardrobe.jpeg", alt: "Oase Room - Wardrobe" },
+];
+
 export default function RoomsPage() {
   const { t } = useLanguage();
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [galleryImages, setGalleryImages] = useState<{src: string; alt: string}[]>([]);
+  const [galleryRoom, setGalleryRoom] = useState("");
+
+  const openGallery = (room: string, images: {src: string; alt: string}[]) => {
+    setGalleryRoom(room);
+    setGalleryImages(images);
+    setGalleryOpen(true);
+  };
 
   return (
     <>
       {/* Hero Section */}
       <section className="relative h-[500px] w-full">
-        <img alt="Hotel exterior at dusk" className="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSsoM25kymqg4GtnTcjx1iY2_3e-nu7hbRfSDWEaICWlDtjN7baPvVXy16TYe3y2fyARKqNbSBcsimIcndZ6owDSRqO1O1APJQbmbEr3S5ylHa5f4vCJwRoYj-ANRPAIbmq8pQIGsjUnp0HtIKRCkCti1zd1eZSd-ShIMHFrHb6prX2DTNCaic7yt6MHZZH8ymXjRpIBBmIpDKs-6DDXjUqsKZzzZYBdk85vpM6CtdOfBKWJK544nv" />
+        <img alt="Hotel exterior at dusk" className="absolute inset-0 w-full h-full object-cover" src="/images/qafotel.jpeg" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-24 max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white leading-tight mb-6 whitespace-pre-line">{t(translations.rooms, "heroTitle")}</h1>
@@ -44,7 +69,7 @@ export default function RoomsPage() {
           <article className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group">
             <div className="relative h-64 overflow-hidden">
               <span className="absolute top-4 left-4 z-10 bg-brand/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-sm">{t(translations.rooms, "mostPopular")}</span>
-              <img alt="Leaf Room interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRvaS5NQeWNTcvfvVRqIUutvhzMRp_A8RyC1jyb8Geubv4GuoXfj-v9PbLdayKrHHhWiN3SSetEuhJ1AfIypysKAvktZB4OZDoOW3oHeygzabZuyjcJW2R0Fa4CsvJTd-mKqRKdZkpL6nGz07WqWNKmhmtN-gxDgAdD8zPs2MTiuzcqYrgZezAVUWlmgCrGIJjpcD2sT2GlVINWiVPTV8lZrrvz_GoO5HpriRFP3FpqGp4R4DEmLrg" />
+              <img alt="Leaf Room interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/images/leaf room.jpeg" />
             </div>
             <div className="p-8 flex flex-col flex-grow">
               <h3 className="text-2xl font-serif text-gray-900 mb-3">{t(translations.rooms, "leafRoom")}</h3>
@@ -57,7 +82,7 @@ export default function RoomsPage() {
               </div>
               <div className="flex items-center justify-between pt-6 border-t border-gray-100">
                 <div className="text-gray-500 text-sm">{t(translations.home, "from")} <span className="text-xl font-bold text-gray-900">IDR 450.000</span> {t(translations.home, "perNight")}</div>
-                <button onClick={() => sendBookingWhatsApp({ room: "Leaf Room" })} className="bg-brand text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand/90 transition-colors flex items-center gap-2">{t(translations.rooms, "viewDetails")}<ArrowRight className="w-4 h-4" /></button>
+                <button onClick={() => openGallery(t(translations.rooms, "leafRoom"), leafRoomImages)} className="bg-brand text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand/90 transition-colors flex items-center gap-2">{t(translations.rooms, "viewDetails")}<ArrowRight className="w-4 h-4" /></button>
               </div>
             </div>
           </article>
@@ -66,7 +91,7 @@ export default function RoomsPage() {
           <article className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col group">
             <div className="relative h-64 overflow-hidden">
               <span className="absolute top-4 left-4 z-10 bg-brand/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-sm">{t(translations.rooms, "mostPopular")}</span>
-              <img alt="Oase Room interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCiEBLOxUu-2TJKJ81lHq7hYcOciv1E2Rmq3VdX9UQZcCGnJSbz51b9968dWkHBPsAiWHxQ9FjX3dy2QeH8mgP0cyvvAgI6hC_89IzRuOvdiaqohbEudzbPoqpAAgXtBrEs0UVweoi38Iaj1rcNzVmYzmhWiIP6HJ9BkZsvJiQq52vxgLxWGzn8Q8D1niCJEiZWmvAcFJ9w2SjSpzEsY0spsnk0o0bkUAA6yWHlDlzsoMWlzL2r93_" />
+              <img alt="Oase Room interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/images/oase room.jpeg" />
             </div>
             <div className="p-8 flex flex-col flex-grow">
               <h3 className="text-2xl font-serif text-gray-900 mb-3">{t(translations.rooms, "oaseRoom")}</h3>
@@ -79,7 +104,7 @@ export default function RoomsPage() {
               </div>
               <div className="flex items-center justify-between pt-6 border-t border-gray-100">
                 <div className="text-gray-500 text-sm">{t(translations.home, "from")} <span className="text-xl font-bold text-gray-900">IDR 550.000</span> {t(translations.home, "perNight")}</div>
-                <button onClick={() => sendBookingWhatsApp({ room: "Oase Room" })} className="bg-brand text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand/90 transition-colors flex items-center gap-2">{t(translations.rooms, "viewDetails")}<ArrowRight className="w-4 h-4" /></button>
+                <button onClick={() => openGallery(t(translations.rooms, "oaseRoom"), oaseRoomImages)} className="bg-brand text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand/90 transition-colors flex items-center gap-2">{t(translations.rooms, "viewDetails")}<ArrowRight className="w-4 h-4" /></button>
               </div>
             </div>
           </article>
@@ -108,6 +133,13 @@ export default function RoomsPage() {
           <button onClick={() => sendBookingWhatsApp()} className="relative z-10 bg-white text-brand px-8 py-3.5 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">{t(translations.nav, "bookYourStay")}<ArrowRight className="w-5 h-5" /></button>
         </div>
       </section>
+
+      <RoomGallery
+        isOpen={galleryOpen}
+        onClose={() => setGalleryOpen(false)}
+        roomName={galleryRoom}
+        images={galleryImages}
+      />
     </>
   );
 }

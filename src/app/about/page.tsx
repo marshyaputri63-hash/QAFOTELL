@@ -14,7 +14,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[400px] w-full">
         <div className="absolute inset-0 w-full h-full">
-          <img alt="Qafotel Exterior at Sunset" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgXoVagwfGlT1idUlW6NeGIiKlm2Qln9gPPiSarvU9KtIGVDaEChtdaXAfmnNTFFSs-fAHkcW9MKIllXlEvtukuc_2Uqy7eEJAsAmgKUgbImRejwZjk4-hvtfQC2q51gh8IXUG-SWj4BX7-3dtVjQCSu9f7Sndu7ZaHqQq3vfNMkyo-EbfPhTAAhn0jrtOEVF9_7Y1x9qmampMKJkz6PKkTsOb-N50FG4eLyL0JzKlcVEkCLofmoyc" />
+          <img alt="Qafotel Exterior at Sunset" className="w-full h-full object-cover" src="/images/qafotel_landscape.jpeg" />
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
@@ -41,7 +41,7 @@ export default function AboutPage() {
                 <div className="flex gap-4"><div className="flex-shrink-0 mt-1"><div className="w-10 h-10 rounded-full bg-surface-alt flex items-center justify-center text-brand"><Smile className="w-5 h-5" /></div></div><div><h3 className="text-sm font-bold text-gray-900 mb-1">{t(translations.about, "trustedHosp")}</h3><p className="text-sm text-gray-500 leading-relaxed">{t(translations.about, "trustedHospDesc")}</p></div></div>
               </div>
             </div>
-            <div className="relative"><img alt="Hotel Building Exterior" className="rounded-2xl shadow-xl w-full h-[400px] lg:h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD82hMgZesskDhnWdy_-tsk6vy-0Aqf9Hlj82GbflSXB2XnQW8K86glN7n_Qs_axUdUkJMUXHkCkn9YqzxdVMoZlVijkwCD2yqEPkrqLApWMty1b2J1U-avRkTVJGWLHlOAbZozKeJGdgXuNKhu_MKQwNUhNoqGeqX6FsbwOjzDHE-2fxWYlkiI1ChDhZx1M1QKN99oQ_pDevjryiT9HGA99Y1S4PijKOT9yEf9eDoMDLSqp9aG2v70" /></div>
+            <div className="relative"><img alt="Hotel Building Exterior" className="rounded-2xl shadow-xl w-full h-[400px] lg:h-[500px] object-cover" src="/images/qafotel.jpeg" /></div>
           </div>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function AboutPage() {
       <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-            <div className="order-2 lg:order-1 relative"><img alt="Thoughtfully Designed Hotel Room" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdF8hxinqMmvpjYT-lIOMRTqY5jkMznzd9pujizcqPPNjQg7-Wt-lIE5q8T3WLSv9HdufBJot2dZDS9LVPx1TP_ibrIpv72SaE5k_GBDbVbvPncZEQnPg-PSMb3J820t7GLz2rO4p658-3DCyOkot3UxQT3eaFlcIQauX0yiOcsN0AisWvuYOIaT-1Iv02dI4eDDsIHhKGBAL-rovTAKizaTcGSo0VVc6va7SxMFBd0HmB7KOEaLYS" /></div>
+            <div className="order-2 lg:order-1 relative"><img alt="Thoughtfully Designed Hotel Room" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" src="/images/indoor.jpeg" /></div>
             <div className="order-1 lg:order-2">
               <div className="flex items-center gap-2 mb-4"><span className="text-xs font-bold tracking-widest text-brand uppercase">{t(translations.about, "thoughtfullyDesigned")}</span><svg className="text-yellow-500" fill="none" height="16" viewBox="0 0 24 24" width="16"><path d="M12 2L14.4 8.8H21.6L15.8 13.2L18 20L12 15.6L6 20L8.2 13.2L2.4 8.8H9.6L12 2Z" fill="currentColor" /></svg></div>
               <h2 className="serif text-3xl md:text-4xl text-gray-900 mb-6 leading-tight">{t(translations.about, "designHeading")}</h2>
