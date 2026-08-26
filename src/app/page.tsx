@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
 import { translations } from "@/lib/i18n";
@@ -11,6 +12,17 @@ import {
 
 export default function HomePage() {
   const { t } = useLanguage();
+  const today = new Date().toISOString().split("T")[0];
+  const tomorrow = new Date(Date.now() + 86400000).toISOString().split("T")[0];
+  const [checkIn, setCheckIn] = useState(today);
+  const [checkOut, setCheckOut] = useState(tomorrow);
+  const [guests, setGuests] = useState("2");
+  const [rooms, setRooms] = useState("1");
+
+  const formatDate = (d: string) => {
+    const date = new Date(d + "T00:00:00");
+    return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  };
 
   return (
     <>
@@ -28,27 +40,39 @@ export default function HomePage() {
       <div className="container mx-auto px-4 -mt-16 relative z-20">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-4 md:p-6 flex flex-col md:flex-row items-center gap-4 md:gap-6 justify-between max-w-6xl mx-auto border border-gray-100">
           <div className="flex-1 w-full flex items-center gap-4 border-r border-gray-200 pr-6">
-            <Calendar className="text-gray-400 w-6 h-6" />
-            <div>
+            <Calendar className="text-gray-400 w-6 h-6 shrink-0" />
+            <div className="flex-1">
               <div className="text-xs text-gray-500 font-medium mb-1">{t(translations.home, "checkIn")}</div>
-              <div className="font-medium text-gray-800 flex items-center gap-2">May 20, 2024<svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></div>
+              <input type="date" value={checkIn} min={today} onChange={(e) => setCheckIn(e.target.value)} className="w-full font-medium text-gray-800 bg-transparent border-none outline-none cursor-pointer text-sm" />
             </div>
           </div>
           <div className="flex-1 w-full flex items-center gap-4 border-r border-gray-200 px-6">
-            <Calendar className="text-gray-400 w-6 h-6" />
-            <div>
+            <Calendar className="text-gray-400 w-6 h-6 shrink-0" />
+            <div className="flex-1">
               <div className="text-xs text-gray-500 font-medium mb-1">{t(translations.home, "checkOut")}</div>
-              <div className="font-medium text-gray-800 flex items-center gap-2">May 21, 2024<svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></div>
+              <input type="date" value={checkOut} min={checkIn} onChange={(e) => setCheckOut(e.target.value)} className="w-full font-medium text-gray-800 bg-transparent border-none outline-none cursor-pointer text-sm" />
             </div>
           </div>
           <div className="flex-1 w-full flex items-center gap-4 px-6">
-            <User className="text-gray-400 w-6 h-6" />
-            <div>
+            <User className="text-gray-400 w-6 h-6 shrink-0" />
+            <div className="flex-1">
               <div className="text-xs text-gray-500 font-medium mb-1">{t(translations.home, "guests")}</div>
-              <div className="font-medium text-gray-800 flex items-center gap-2">{t(translations.home, "adultsRoom")}<svg className="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg></div>
+              <div className="flex items-center gap-2">
+                <select value={guests} onChange={(e) => setGuests(e.target.value)} className="font-medium text-gray-800 bg-transparent border-none outline-none cursor-pointer text-sm">
+                  <option value="1">1 {t(translations.home, "guests")}</option>
+                  <option value="2">2 {t(translations.home, "guests")}</option>
+                  <option value="3">3 {t(translations.home, "guests")}</option>
+                  <option value="4">4 {t(translations.home, "guests")}</option>
+                </select>
+                <span className="text-gray-300">|</span>
+                <select value={rooms} onChange={(e) => setRooms(e.target.value)} className="font-medium text-gray-800 bg-transparent border-none outline-none cursor-pointer text-sm">
+                  <option value="1">1 Room</option>
+                  <option value="2">2 Rooms</option>
+                </select>
+              </div>
             </div>
           </div>
-          <button onClick={() => checkAvailabilityWhatsApp({ checkIn: "May 20, 2024", checkOut: "May 21, 2024", guests: "2 Adults, 1 Room" })} className="w-full md:w-auto bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
+          <button onClick={() => checkAvailabilityWhatsApp({ checkIn: formatDate(checkIn), checkOut: formatDate(checkOut), guests: `${guests} Adults, ${rooms} Room${rooms !== "1" ? "s" : ""}` })} className="w-full md:w-auto bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
             <Search className="w-4 h-4" /> {t(translations.home, "checkAvailability")}
           </button>
         </div>

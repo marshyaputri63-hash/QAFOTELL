@@ -184,6 +184,7 @@ export const translations = {
     visitUs: { en: "Visit Jardin Coffee", id: "Kunjungi Jardin Coffee" },
     visitUsDesc: { en: "Located in the lobby of Qafotel. Open daily for hotel guests and walk-ins.", id: "Terletak di lobi Qafotel. Buka setiap hari untuk tamu hotel dan pengunjung." },
     openDaily: { en: "Open Daily", id: "Buka Setiap Hari" },
+    fullMenu: { en: "View Full Menu", id: "Lihat Menu Lengkap" },
   },
   roomGallery: {
     close: { en: "Close", id: "Tutup" },

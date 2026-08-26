@@ -61,10 +61,10 @@ export default function ContactPage() {
           <div className="md:col-span-2 bg-surface-container rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden">
             <div className="relative z-10">
               <h2 className="text-2xl text-brand font-bold mb-4">{t(translations.contact, "hereToHelp")}</h2>
-              <p className="text-gray-600 text-sm leading-relaxed mb-8">{t(translations.contact, "helpDesc")}</p>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">{t(translations.contact, "helpDesc")}</p>
             </div>
-            <div className="mt-auto self-start relative z-10">
-              <img alt="Decorative" className="rounded-xl w-48 object-cover mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHolEaCQSeaVL31rxCA3RhqATTvSu2YLZWTF1jJv3kqterUQXBftViQKFDhvV7YRoTq5m54mwFIlTVPHvuKdk4Su16NpJ71u-oEHMeJwEfYX02RCas5M5TTa69MJ3ByQWSvG5Dnnqpc43ARaWbdtWCov8S3AVCvH8BBdlpqj_MFrGhillcqTwAg9fBzQ1Sp5FB7rcivcp_1laSVtDJW_9Ac5RukmYwwGRFrX4jbXv2JNgv7BytKUvC" />
+            <div className="mt-auto relative z-10">
+              <img alt="Qafotel Hotel" className="rounded-xl w-full h-48 object-cover" src="/images/qafotel.jpeg" />
             </div>
           </div>
           <div className="md:col-span-3 bg-surface-container rounded-2xl p-8">

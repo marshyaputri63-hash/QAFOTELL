@@ -29,7 +29,7 @@ export function sendBookingWhatsApp(params: BookingParams = {}) {
 
 Selamat ${getTimeGreeting()}.
 
-Saya ingin melakukan reservasi kamar di QAFOTEL BOUTIQUE:
+Saya ingin melakukan reservasi kamar di QAFOTEL:
 
 *Detail Reservasi*
 - Check-in: ${checkIn}
@@ -52,7 +52,7 @@ export function checkAvailabilityWhatsApp(params: BookingParams = {}) {
 
 Selamat ${getTimeGreeting()}.
 
-Saya ingin mengecek ketersediaan kamar di QAFOTEL BOUTIQUE:
+Saya ingin mengecek ketersediaan kamar di QAFOTEL:
 
 *Detail Permintaan*
 - Check-in: ${checkIn}
@@ -82,6 +82,6 @@ Pesan:
 ${message}
 
 ---
-Dikirim melalui formulir kontak website QAFOTEL BOUTIQUE`;
+Dikirim melalui formulir kontak website QAFOTEL`;
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`, "_blank");
 }
