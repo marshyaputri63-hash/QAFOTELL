@@ -167,7 +167,7 @@ export const translations = {
     newsletter: { en: "Newsletter", id: "Newsletter" },
     newsletterDesc: { en: "Subscribe to get the latest updates and exclusive offers from QAFOTEL.", id: "Berlangganan untuk mendapatkan pembaruan terbaru dan penawaran eksklusif dari QAFOTEL." },
     emailPlaceholder: { en: "Your email address", id: "Alamat email Anda" },
-    copyright: { en: "\u00a9 2024 QAFOTEL. All Rights Reserved.", id: "\u00a9 2024 QAFOTEL. Hak Cipta Dilindungi." },
+    copyright: { en: "\u00a9 2026 QAFOTEL. All Rights Reserved.", id: "\u00a9 2026 QAFOTEL. Hak Cipta Dilindungi." },
     privacyPolicy: { en: "Privacy Policy", id: "Kebijakan Privasi" },
     termsConditions: { en: "Terms & Conditions", id: "Syarat & Ketentuan" },
     faq: { en: "FAQ", id: "FAQ" },

@@ -9,7 +9,7 @@ import { MapPin, Phone, Mail, Clock, Send, ArrowRight, Leaf } from "lucide-react
 
 const ADDRESS = "Jl. Ruhui Rahayu, Balikpapan, Kalimantan Timur";
 const PHONE = "+62 812-4108-7024";
-const EMAIL = "fo.qafotelboutique@gmail.com";
+const EMAIL = "fo.qafotel@gmail.com";
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -88,7 +88,7 @@ export default function ContactPage() {
         {/* Directions */}
         <section className="bg-surface-container rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-4 flex-1"><div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center text-white shrink-0"><Leaf className="w-5 h-5" /></div><div><h3 className="font-bold text-brand mb-1">{t(translations.contact, "findUs")}</h3><p className="text-gray-600 text-sm">{t(translations.contact, "findUsDesc")}</p></div></div>
-          <a href="https://maps.app.goo.gl/BBJFmzCGDDLBbzyv8" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border border-outline rounded-xl flex items-center gap-2 hover:bg-surface-container-high transition-colors text-sm font-medium whitespace-nowrap">{t(translations.contact, "getDirections")}<ArrowRight className="w-4 h-4" /></a>
+          <a href="https://maps.app.goo.gl/FyEmnSsQ2WHxyNmNA?g_st=iw" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border border-outline rounded-xl flex items-center gap-2 hover:bg-surface-container-high transition-colors text-sm font-medium whitespace-nowrap">{t(translations.contact, "getDirections")}<ArrowRight className="w-4 h-4" /></a>
           <div className="flex-1 h-24 rounded-xl overflow-hidden relative"><img alt="Map Area" className="w-full h-full object-cover" src="/images/outdoor.jpeg" /></div>
         </section>
 

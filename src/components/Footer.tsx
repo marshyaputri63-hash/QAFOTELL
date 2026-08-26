@@ -1,13 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Send } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { translations } from "@/lib/i18n";
 
 const ADDRESS = "Jl. Ruhui Rahayu, Balikpapan, Kalimantan Timur";
 const PHONE = "+62 812-4108-7024";
-const EMAIL = "fo.qafotelboutique@gmail.com";
+const EMAIL = "fo.qafotel@gmail.com";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -23,17 +22,6 @@ export default function Footer() {
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
               {t(translations.footer, "description")}
             </p>
-            <div className="flex gap-4 text-gray-500">
-              <Link href="#" className="hover:text-brand transition-colors">
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clipRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63z" fillRule="evenodd" /></svg>
-              </Link>
-              <Link href="#" className="hover:text-brand transition-colors">
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clipRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fillRule="evenodd" /></svg>
-              </Link>
-              <Link href="#" className="hover:text-brand transition-colors">
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clipRule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s-.002 3.254-.42 4.814c-.23.861-.907 1.538-1.768 1.768-1.56.419-7.812.419-7.812.419s-6.252 0-7.812-.419c-.861-.23-1.538-.907-1.768-1.768C2.002 15.254 2 12 2 12s.002-3.254.42-4.814c.23-.861.907-1.538 1.768-1.768C5.748 5 12 5 12 5s6.252 0 7.812.418zM15.32 11.553l-5.32-3.076v6.152l5.32-3.076z" fillRule="evenodd" /></svg>
-              </Link>
-            </div>
           </div>
 
           <div>
@@ -74,12 +62,6 @@ export default function Footer() {
                 <span>{EMAIL}</span>
               </li>
             </ul>
-            <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wider">{t(translations.footer, "newsletter")}</h4>
-            <p className="text-xs text-gray-500 mb-4">{t(translations.footer, "newsletterDesc")}</p>
-            <form className="flex">
-              <input className="w-full bg-white border border-gray-200 px-4 py-2 rounded-l-lg focus:outline-none focus:border-brand text-sm" placeholder={t(translations.footer, "emailPlaceholder")} type="email" />
-              <button className="bg-brand hover:bg-brand-dark text-white px-4 py-2 rounded-r-lg transition-colors" type="submit"><Send className="h-4 w-4" /></button>
-            </form>
           </div>
         </div>
         <div className="text-center text-xs text-gray-500 pt-6 border-t border-gray-300">{t(translations.footer, "copyright")}</div>

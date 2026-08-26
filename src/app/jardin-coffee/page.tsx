@@ -144,13 +144,15 @@ export default function JardinCoffeePage() {
               <MapPin className="w-4 h-4 text-brand" />
               Lobby Level
             </div>
-            <Link
-              href="/contact"
+            <a
+              href="https://maps.app.goo.gl/FyEmnSsQ2WHxyNmNA?g_st=iw"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-brand text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-dark transition-colors flex items-center gap-2"
             >
               {t(translations.jardinCoffee, "visitUs")}
               <ArrowRight className="w-4 h-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

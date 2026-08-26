@@ -57,10 +57,6 @@ export default function RoomsPage() {
             <h2 className="text-4xl font-serif text-gray-900 mb-2">{t(translations.rooms, "findPerfectStay")}</h2>
             <p className="text-gray-600">{t(translations.rooms, "chooseRoom")}</p>
           </div>
-          <div className="flex gap-4">
-            <button className="bg-brand text-white px-6 py-2.5 rounded-full text-sm font-medium">{t(translations.rooms, "allRooms")}</button>
-            <button className="bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 px-6 py-2.5 rounded-full text-sm font-medium transition-colors">{t(translations.rooms, "roomFeatures")}</button>
-          </div>
         </div>
 
         {/* Room Cards Grid */}
