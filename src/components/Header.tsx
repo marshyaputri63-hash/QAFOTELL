@@ -26,7 +26,7 @@ export default function Header() {
     <header className="bg-surface py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 z-50 shadow-sm">
       <Link href="/" className="flex items-center">
         <img
-          src="/images/qafotelheader.jpeg"
+          src="/images/qafotelheader.png"
           alt="Qafotel Logo"
           className="h-12 w-auto object-contain"
         />

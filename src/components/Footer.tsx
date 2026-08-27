@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
             <img
-              src="/images/qafotelheader.jpeg"
+              src="/images/qafotelheader.png"
               alt="Qafotel Logo"
               className="h-14 w-auto object-contain mb-6"
             />
