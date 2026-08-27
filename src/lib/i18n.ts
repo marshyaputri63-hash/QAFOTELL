@@ -178,7 +178,7 @@ export const translations = {
     heroSubtitle: { en: "Our signature cafe in the lobby, serving handcrafted drinks and delicious bites.", id: "Cafe andalan kami di lobi, menyajikan minuman handmade dan makanan lezat." },
     bestSellers: { en: "Best Sellers", id: "Menu Terlaris" },
     montBlanc: { en: "Mont Blanc Coffee", id: "Mont Blanc Coffee" },
-    montBlancDesc: { en: "A signature espresso-based drink with rich, velvety layers and a hint of sweetness. Our most popular creation, perfect for any time of day.", id: "Minuman berbasis espresso andalan dengan lapisan velvety yang kaya dan sedikit rasa manis. Kreasi paling populer kami, sempurna untuk setiap saat." },
+    montBlancDesc: { en: "Mont Blanc coffee is a cold coffee drink from Melbourne that combines black coffee with a layer of smooth cream and a hint of fresh orange flavor.", id: "Mont Blanc coffee adalah minuman kopi dingin dari Melbourne yang menggabungkan kopi hitam dengan lapisan krim yang halus dan sentuhan rasa jeruk segar." },
     smashedCheezy: { en: "Smashed Cheezy Burger", id: "Smashed Cheezy Burger" },
     smashedCheezyDesc: { en: "A juicy smashed patty loaded with melted cheese, fresh vegetables, and our special sauce. A must-try savory delight.", id: "Patty smashed yang juicy dengan keju leleh, sayuran segar, dan saus spesial kami. Kelezatan gurih yang wajib dicoba." },
     visitUs: { en: "Visit Jardin Coffee", id: "Kunjungi Jardin Coffee" },
