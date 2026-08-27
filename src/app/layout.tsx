@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "Qafotel - Hotel & Resort",
+  title: "QAFOTEL BOUTIQUE || JARDIN COFFEE",
   description:
-    "QAFOTEL creates warm, personal, and memorable experiences for modern souls, in every moment that matters.",
+    "QAFOTEL BOUTIQUE || JARDIN COFFEE - warm, personal, and memorable experiences for modern souls, in every moment that matters.",
 };
 
 export default function RootLayout({

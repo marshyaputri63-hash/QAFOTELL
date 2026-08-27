@@ -123,7 +123,7 @@ export default function JardinCoffeePage() {
               <img
                 alt="Jardin Coffee Logo"
                 className="w-10 h-10 object-contain"
-                src="/images/logo jardin.jpeg"
+                src="/images/logo jardin.png"
               />
             </div>
             <div>
