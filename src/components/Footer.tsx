@@ -16,9 +16,11 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
-            <div className="font-serif text-2xl font-bold text-brand flex items-center mb-6">
-              QAF<span className="text-brand-gold text-xl relative -top-0.5">O</span>TEL
-            </div>
+            <img
+              src="/images/logo qafotel.jpeg"
+              alt="Qafotel Logo"
+              className="h-14 w-auto object-contain mb-6"
+            />
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
               {t(translations.footer, "description")}
             </p>

@@ -25,11 +25,11 @@ export default function Header() {
   return (
     <header className="bg-surface py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 z-50 shadow-sm">
       <Link href="/" className="flex items-center">
-        <div className="font-serif text-2xl font-bold text-brand flex items-center">
-          QAF
-          <span className="text-brand-gold text-xl relative -top-0.5">O</span>
-          TEL
-        </div>
+        <img
+          src="/images/logo qafotel.jpeg"
+          alt="Qafotel Logo"
+          className="h-12 w-auto object-contain"
+        />
       </Link>
 
       <nav className="hidden md:flex gap-8 text-sm font-medium">
