@@ -73,7 +73,7 @@ export default function RoomsPage() {
               <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-sm text-gray-600 mb-8">
                 <div className="flex items-center gap-2"><Users className="text-brand w-[18px] h-[18px]" /><span className="whitespace-pre-line">{t(translations.rooms, "breakfastFor2")}</span></div>
                 <div className="flex items-center gap-2"><Mail className="text-brand w-[18px] h-[18px]" /><span>23 m&sup2;</span></div>
-                <div className="flex items-center gap-2"><Bed className="text-brand w-[18px] h-[18px]" /><span>King / Twin</span></div>
+                <div className="flex items-center gap-2"><Bed className="text-brand w-[18px] h-[18px]" /><span> Queen </span></div>
                 <div className="flex items-center gap-2"><Globe className="text-brand w-[18px] h-[18px]" /><span>{t(translations.rooms, "cozyStay")}</span></div>
               </div>
               <div className="flex items-center justify-between pt-6 border-t border-gray-100">
@@ -95,7 +95,7 @@ export default function RoomsPage() {
               <div className="grid grid-cols-2 gap-y-4 gap-x-2 text-sm text-gray-600 mb-8">
                 <div className="flex items-center gap-2"><Users className="text-brand w-[18px] h-[18px]" /><span className="whitespace-pre-line">{t(translations.rooms, "breakfastFor2")}</span></div>
                 <div className="flex items-center gap-2"><Mail className="text-brand w-[18px] h-[18px]" /><span>30 m&sup2;</span></div>
-                <div className="flex items-center gap-2"><Bed className="text-brand w-[18px] h-[18px]" /><span>King</span></div>
+                <div className="flex items-center gap-2"><Bed className="text-brand w-[18px] h-[18px]" /><span>Queen</span></div>
                 <div className="flex items-center gap-2"><Globe className="text-brand w-[18px] h-[18px]" /><span>{t(translations.rooms, "cozyStay")}</span></div>
               </div>
               <div className="flex items-center justify-between pt-6 border-t border-gray-100">
